@@ -3,11 +3,12 @@ import 'package:google_fonts/google_fonts.dart';
 import 'mode.dart';
 
 class HomeView extends StatefulWidget {
+  const HomeView({super.key});
+
   @override
+  // ignore: library_private_types_in_public_api
   _HomeViewState createState() => _HomeViewState();
 }
-
-
 
 class _HomeViewState extends State<HomeView> {
   final List<Category> catego = [
@@ -17,11 +18,11 @@ class _HomeViewState extends State<HomeView> {
     ),
     Category(
       imagUrl: "assets/images/sule.png",
-      name: "Example exercises",
+      name: "Exercícios de Yoga",
     ),
     Category(
       imagUrl: "assets/images/alexsandra.png",
-      name: "Example exercises",
+      name: "Exemplo de exercício",
     ),
   ];
   @override
@@ -30,7 +31,7 @@ class _HomeViewState extends State<HomeView> {
       body: Container(
         width: double.infinity,
         height: double.infinity,
-        decoration: BoxDecoration(
+        decoration: const BoxDecoration(
           image: DecorationImage(
             image: AssetImage("assets/images/image3.png"),
             fit: BoxFit.cover,
@@ -59,7 +60,7 @@ class _HomeViewState extends State<HomeView> {
                           "Zezo",
                           style: GoogleFonts.bebasNeue(
                             fontSize: 32,
-                            color: Color(0xFF40D876),
+                            color: const Color(0xFF40D876),
                             letterSpacing: 1.8,
                           ),
                         ),
@@ -72,9 +73,9 @@ class _HomeViewState extends State<HomeView> {
                         borderRadius: BorderRadius.circular(40.0),
                         border: Border.all(
                           width: 3,
-                          color: Color(0xFF40D876),
+                          color: const Color(0xFF40D876),
                         ),
-                        image: DecorationImage(
+                        image: const DecorationImage(
                           image: AssetImage("assets/images/emely.jpg"),
                           fit: BoxFit.cover,
                         ),
@@ -97,10 +98,10 @@ class _HomeViewState extends State<HomeView> {
                       height: 60,
                       width: 60,
                       decoration: BoxDecoration(
-                        color: Color(0xFF40D876),
+                        color: const Color(0xFF40D876),
                         borderRadius: BorderRadius.circular(40.0),
                       ),
-                      child: Center(
+                      child: const Center(
                         child: Icon(
                           Icons.play_arrow,
                           size: 40,
@@ -122,12 +123,12 @@ class _HomeViewState extends State<HomeView> {
                           "Find ",
                           style: GoogleFonts.lato(
                             fontSize: 26,
-                            color: Color(0xFF40D876),
+                            color: const Color(0xFF40D876),
                             fontWeight: FontWeight.bold,
                           ),
                         ),
                         Text(
-                          "your Workout",
+                          "Seu Treino",
                           style: GoogleFonts.lato(
                             fontSize: 26,
                             color: Colors.white,
@@ -136,7 +137,7 @@ class _HomeViewState extends State<HomeView> {
                         ),
                       ],
                     ),
-                    Icon(
+                    const Icon(
                       Icons.filter_alt_outlined,
                       size: 40,
                       color: Colors.white,
@@ -150,14 +151,14 @@ class _HomeViewState extends State<HomeView> {
                   width: 353,
                   height: 46,
                   decoration: BoxDecoration(
-                    color: Color(0xFF232441),
+                    color: const Color(0xFF232441),
                     borderRadius: BorderRadius.circular(30.0),
                   ),
                   child: Padding(
                     padding: const EdgeInsets.symmetric(horizontal: 10),
                     child: TextFormField(
-                      decoration: InputDecoration(
-                        hintText: "SEARCH WORKOUT",
+                      decoration: const InputDecoration(
+                        hintText: "PESQUISAR EXERCÍCIO",
                         hintStyle: TextStyle(
                           color: Colors.white54,
                         ),
@@ -185,14 +186,14 @@ class _HomeViewState extends State<HomeView> {
                       ),
                     ),
                     Text(
-                      "Hard workout",
+                      "Treino Duro",
                       style: GoogleFonts.lato(
                         fontSize: 16,
                         color: Colors.white,
                       ),
                     ),
                     Text(
-                      "Full body",
+                      "Corpo Todo",
                       style: GoogleFonts.lato(
                         fontSize: 16,
                         color: Colors.white,
@@ -213,7 +214,7 @@ class _HomeViewState extends State<HomeView> {
                 child: Row(
                   children: [
                     Text(
-                      "Popular Workout",
+                      "Treino Popular",
                       style: GoogleFonts.lato(
                         fontSize: 30,
                         color: Colors.white,
@@ -225,7 +226,7 @@ class _HomeViewState extends State<HomeView> {
               ),
               Padding(
                 padding: const EdgeInsets.only(top: 40),
-                child: Container(
+                child: SizedBox(
                   width: double.infinity,
                   height: 200,
                   child: ListView.builder(
@@ -246,12 +247,12 @@ class _HomeViewState extends State<HomeView> {
                                   ),
                                 ),
                               ),
-                              SizedBox(
+                              const SizedBox(
                                 height: 10,
                               ),
                               Text(
                                 catego[index].name,
-                                style: TextStyle(
+                                style: const TextStyle(
                                   color: Colors.white,
                                   fontSize: 12,
                                 ),
@@ -269,5 +270,3 @@ class _HomeViewState extends State<HomeView> {
     );
   }
 }
-
-

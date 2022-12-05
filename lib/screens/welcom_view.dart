@@ -19,8 +19,9 @@ class _WelcomViewState extends State<WelcomView> {
       body: Container(
         height: double.infinity,
         width: double.infinity,
+        // ignore: prefer_const_constructors
         decoration: BoxDecoration(
-          image: DecorationImage(
+          image: const DecorationImage(
             image: AssetImage("assets/images/image2.png"),
             fit: BoxFit.cover,
           ),
@@ -49,7 +50,7 @@ class _WelcomViewState extends State<WelcomView> {
                     "ELEMENT",
                     style: GoogleFonts.bebasNeue(
                       fontSize: 32,
-                      color: Color(0xFF40D876),
+                      color: const Color(0xFF40D876),
                       letterSpacing: 1.8,
                     ),
                   ),
@@ -69,11 +70,11 @@ class _WelcomViewState extends State<WelcomView> {
                       color: Colors.white,
                     ),
                   ),
-                  SizedBox(
+                  const SizedBox(
                     height: 20,
                   ),
                   Text(
-                    "we want to know more about you, follow the next steps\n to complete the information",
+                    "queremos saber mais sobre você\n para completar",
                     style: GoogleFonts.lato(
                       fontSize: 12,
                       fontWeight: FontWeight.w400,
@@ -82,7 +83,7 @@ class _WelcomViewState extends State<WelcomView> {
                   ),
                   Padding(
                     padding: const EdgeInsets.only(top: 40.0),
-                    child: Container(
+                    child: SizedBox(
                       height: 226,
                       width: MediaQuery.of(context).size.width,
                       child: ListView.builder(
@@ -95,7 +96,7 @@ class _WelcomViewState extends State<WelcomView> {
                               height: 226,
                               width: 195,
                               decoration: BoxDecoration(
-                                color: Color(0xFF232441),
+                                color: const Color(0xFF232441),
                                 borderRadius: BorderRadius.circular(20.0),
                               ),
                               child: Padding(
@@ -108,26 +109,26 @@ class _WelcomViewState extends State<WelcomView> {
                                       "I am",
                                       style: GoogleFonts.lato(
                                         fontSize: 30,
-                                        color: Color(0xFF40D876),
+                                        color: const Color(0xFF40D876),
                                         fontWeight: FontWeight.bold,
                                       ),
                                     ),
-                                    SizedBox(
+                                    const SizedBox(
                                       height: 10.0,
                                     ),
                                     Text(
                                       levels[index],
                                       style: GoogleFonts.lato(
                                         fontSize: 30,
-                                        color: Color(0xFF40D876),
+                                        color: const Color(0xFF40D876),
                                         fontWeight: FontWeight.bold,
                                       ),
                                     ),
-                                    SizedBox(
+                                    const SizedBox(
                                       height: 20.0,
                                     ),
                                     Text(
-                                      "I have never trained",
+                                      "eu nunca treinei",
                                       style: GoogleFonts.lato(
                                         fontSize: 12,
                                         fontWeight: FontWeight.w400,
@@ -150,7 +151,7 @@ class _WelcomViewState extends State<WelcomView> {
                       mainAxisAlignment: MainAxisAlignment.spaceBetween,
                       children: [
                         Text(
-                          "Skip Intro",
+                          "Pular introdução",
                           style: GoogleFonts.lato(
                             fontSize: 16,
                             fontWeight: FontWeight.w400,
@@ -168,7 +169,7 @@ class _WelcomViewState extends State<WelcomView> {
                             width: 139,
                             height: 39,
                             decoration: BoxDecoration(
-                              color: Color(0xFF40D876),
+                              color: const Color(0xFF40D876),
                               borderRadius: BorderRadius.circular(5.0),
                             ),
                             child: Center(
