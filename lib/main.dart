@@ -1,5 +1,3 @@
-import 'dart:html';
-
 import 'package:flutter/material.dart';
 import 'package:training_diet_app/screens/welcom_view.dart';
 
