@@ -1,7 +1,7 @@
 <h1>On-Demand-Fitness-App</h1> 
 
 <p align="center">
-  <img src="https://img.shields.io/static/v1?label=Vue&message=deploy&color=blue&style=for-the-badge&logo=vuedotjs&logoColor=whiteo=Flutter"/>
+  <img src="https://img.shields.io/static/v1?label=Flutter&message=deploy&color=blue&style=for-the-badge&logo=flutterdotjs&logoColor=whiteo=Flutter"/>
   <img src="https://img.shields.io/static/v1?label=Netlify&message=deploy&color=blue&style=for-the-badge&logo=netlify"/>
   <img src="http://img.shields.io/static/v1?label=License&message=MIT&color=green&style=for-the-badge"/>
   <img src="http://img.shields.io/static/v1?label=Ruby&message=2.6.3&color=red&style=for-the-badge&logo=ruby"/>
@@ -10,7 +10,7 @@
   <img src="http://img.shields.io/static/v1?label=STATUS&message=EM%20DESENVOLVIMENTO&color=RED&style=for-the-badge"/>
 </p>
 
-> Status do Projeto: :danger: em Desenvolvimento
+> Status do Projeto:  :warning: em Desenvolvimento
 
 ### Tópicos 
 
@@ -50,11 +50,11 @@ Insira os tópicos do README em links para facilitar a navegação do leitor
 
 ... 
 
-Se ainda não houver deploy, insira capturas de tela da aplicação ou gifs
+
 
 ## Pré-requisitos
 
-:warning: [Vue](https://cli.vuejs.org/guide/installation.html)
+:warning: [Flutter](https://docs.flutter.dev/get-started/install)
 
 ...
 
