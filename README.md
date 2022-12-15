@@ -101,8 +101,8 @@ Se for necessário configurar algo antes de iniciar o banco de dados insira os c
 
 ## Linguagens, dependencias e libs utilizadas :books:
 
-- [Vue-js](https://pt-br.https://vuejs.org/guide/introduction.html)
-- [React PDF](https://react-pdf.org/)
+- [Flutter](https://docs.flutter.dev/development/ui/widgets)
+- [Flutter PDF](https://pub.dev/packages/pdf)
 
 ...
 
