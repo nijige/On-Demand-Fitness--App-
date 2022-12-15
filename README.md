@@ -65,7 +65,7 @@ Liste todas as dependencias e libs que o usuário deve ter instalado na máquina
 No terminal, clone o projeto: 
 
 ```
-git clone https://github.com/React-Bootcamp-WoMarkersCode/certificate-generator
+git clone https://github.com/nijige/On-Demand-Fitness-App.git
 ```
 
 ... 
