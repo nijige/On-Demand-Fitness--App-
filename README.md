@@ -1,7 +1,7 @@
 <h1>On-Demand-Fitness-App</h1> 
 
 <p align="center">
-  <img src="https://img.shields.io/static/v1?label=Vue&message=deploy&color=blue&style=for-the-badge&logo=vuedotjs&logoColor=whiteo=Vue"/>
+  <img src="https://img.shields.io/static/v1?label=Vue&message=deploy&color=blue&style=for-the-badge&logo=vuedotjs&logoColor=whiteo=Flutter"/>
   <img src="https://img.shields.io/static/v1?label=Netlify&message=deploy&color=blue&style=for-the-badge&logo=netlify"/>
   <img src="http://img.shields.io/static/v1?label=License&message=MIT&color=green&style=for-the-badge"/>
   <img src="http://img.shields.io/static/v1?label=Ruby&message=2.6.3&color=red&style=for-the-badge&logo=ruby"/>
@@ -10,7 +10,7 @@
   <img src="http://img.shields.io/static/v1?label=STATUS&message=EM%20DESENVOLVIMENTO&color=RED&style=for-the-badge"/>
 </p>
 
-> Status do Projeto: :heavy_check_mark: Concluído
+> Status do Projeto: :danger: em Desenvolvimento
 
 ### Tópicos 
 
@@ -77,8 +77,8 @@ Coloque um passo a passo para rodar a sua aplicação. **Dica: clone o próprio 
 Coloque um passo a passo para executar os testes
 
 ```
-$ npm build
-$ npm run serve
+$ flutter doctor
+$ flutter run
 ```
 
 ## Casos de Uso
