@@ -11,8 +11,8 @@ class LoginScreen extends StatelessWidget {
     );
 
     return FlutterLogin(
-      title: 'ECORP',
-      logo: AssetImage('assets/images/ecorp-lightgreen.png'),
+      title: 'On-Demand Fitness',
+      logo: AssetImage('assets/images/back.png'),
       onLogin: (_) => Future(() => null),
       onSignup: (_) => Future(() => null),
       onSubmitAnimationCompleted: () {
@@ -22,11 +22,11 @@ class LoginScreen extends StatelessWidget {
       },
       onRecoverPassword: (_) => Future(() => null),
       theme: LoginTheme(
-        primaryColor: Colors.teal,
-        accentColor: Colors.yellow,
-        errorColor: Colors.deepOrange,
+        primaryColor: Colors.grey,
+        accentColor: Colors.white,
+        errorColor: Colors.green,
         titleStyle: TextStyle(
-          color: Colors.greenAccent,
+          color: Colors.black,
           fontFamily: 'Quicksand',
           letterSpacing: 4,
         ),
@@ -35,15 +35,15 @@ class LoginScreen extends StatelessWidget {
           decoration: TextDecoration.underline,
         ),
         textFieldStyle: TextStyle(
-          color: Colors.orange,
-          shadows: [Shadow(color: Colors.yellow, blurRadius: 2)],
+          color: Colors.black,
+          shadows: [Shadow(color: Colors.white, blurRadius: 2)],
         ),
         buttonStyle: TextStyle(
           fontWeight: FontWeight.w800,
-          color: Colors.yellow,
+          color: Colors.white,
         ),
         cardTheme: CardTheme(
-          color: Colors.yellow.shade100,
+          color: Colors.green.shade100,
           elevation: 5,
           margin: EdgeInsets.only(top: 15),
           shape: ContinuousRectangleBorder(
@@ -51,27 +51,27 @@ class LoginScreen extends StatelessWidget {
         ),
         inputTheme: InputDecorationTheme(
           filled: true,
-          fillColor: Colors.purple.withOpacity(.1),
+          fillColor: Colors.black.withOpacity(.1),
           contentPadding: EdgeInsets.zero,
           errorStyle: TextStyle(
-            backgroundColor: Colors.orange,
+            backgroundColor: Colors.green,
             color: Colors.white,
           ),
           labelStyle: TextStyle(fontSize: 12),
           enabledBorder: UnderlineInputBorder(
-            borderSide: BorderSide(color: Colors.blue.shade700, width: 4),
+            borderSide: BorderSide(color: Colors.green.shade700, width: 4),
             borderRadius: inputBorder,
           ),
           focusedBorder: UnderlineInputBorder(
-            borderSide: BorderSide(color: Colors.blue.shade400, width: 5),
+            borderSide: BorderSide(color: Colors.green.shade400, width: 5),
             borderRadius: inputBorder,
           ),
           errorBorder: UnderlineInputBorder(
-            borderSide: BorderSide(color: Colors.red.shade700, width: 7),
+            borderSide: BorderSide(color: Colors.grey.shade700, width: 7),
             borderRadius: inputBorder,
           ),
           focusedErrorBorder: UnderlineInputBorder(
-            borderSide: BorderSide(color: Colors.red.shade400, width: 8),
+            borderSide: BorderSide(color: Colors.grey.shade400, width: 8),
             borderRadius: inputBorder,
           ),
           disabledBorder: UnderlineInputBorder(
@@ -80,8 +80,8 @@ class LoginScreen extends StatelessWidget {
           ),
         ),
         buttonTheme: LoginButtonTheme(
-          splashColor: Colors.purple,
-          backgroundColor: Colors.pinkAccent,
+          splashColor: Colors.green,
+          backgroundColor: Colors.green,
           highlightColor: Colors.lightGreen,
           elevation: 9.0,
           highlightElevation: 6.0,
