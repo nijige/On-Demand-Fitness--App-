@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
-
-import 'home_view.dart';
+import 'package:training_diet_app/screens/home_view.dart';
+import 'package:training_diet_app/screens/login_view.dart';
 
 class WelcomView extends StatefulWidget {
   @override
@@ -13,6 +13,16 @@ class _WelcomViewState extends State<WelcomView> {
     "inactive",
     "Beginner",
   ];
+
+  void navigateToAnotherPage() {
+    Navigator.push(
+      context,
+      MaterialPageRoute(
+          builder: (context) =>
+              HomeView()), // Substitua "AnotherPage" pela página para a qual deseja navegar
+    );
+  }
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -89,56 +99,61 @@ class _WelcomViewState extends State<WelcomView> {
                         scrollDirection: Axis.horizontal,
                         itemCount: levels.length,
                         itemBuilder: (BuildContext context, index) {
-                          return Padding(
-                            padding: const EdgeInsets.only(right: 10),
-                            child: Container(
-                              height: 226,
-                              width: 195,
-                              decoration: BoxDecoration(
-                                color: Color(0xFF232441),
-                                borderRadius: BorderRadius.circular(20.0),
-                              ),
+                          return GestureDetector(
+                              onTap: () {
+                                navigateToAnotherPage();
+                              },
                               child: Padding(
-                                padding: const EdgeInsets.only(
-                                    left: 20.0, top: 30.0),
-                                child: Column(
-                                  crossAxisAlignment: CrossAxisAlignment.start,
-                                  children: [
-                                    Text(
-                                      "I am",
-                                      style: GoogleFonts.lato(
-                                        fontSize: 30,
-                                        color: Color(0xFF40D876),
-                                        fontWeight: FontWeight.bold,
-                                      ),
+                                padding: const EdgeInsets.only(right: 10),
+                                child: Container(
+                                  height: 226,
+                                  width: 195,
+                                  decoration: BoxDecoration(
+                                    color: Color(0xFF232441),
+                                    borderRadius: BorderRadius.circular(20.0),
+                                  ),
+                                  child: Padding(
+                                    padding: const EdgeInsets.only(
+                                        left: 20.0, top: 30.0),
+                                    child: Column(
+                                      crossAxisAlignment:
+                                          CrossAxisAlignment.start,
+                                      children: [
+                                        Text(
+                                          "I am",
+                                          style: GoogleFonts.lato(
+                                            fontSize: 30,
+                                            color: Color(0xFF40D876),
+                                            fontWeight: FontWeight.bold,
+                                          ),
+                                        ),
+                                        SizedBox(
+                                          height: 10.0,
+                                        ),
+                                        Text(
+                                          levels[index],
+                                          style: GoogleFonts.lato(
+                                            fontSize: 30,
+                                            color: Color(0xFF40D876),
+                                            fontWeight: FontWeight.bold,
+                                          ),
+                                        ),
+                                        SizedBox(
+                                          height: 20.0,
+                                        ),
+                                        Text(
+                                          "I have never trained",
+                                          style: GoogleFonts.lato(
+                                            fontSize: 12,
+                                            fontWeight: FontWeight.w400,
+                                            color: Colors.white,
+                                          ),
+                                        ),
+                                      ],
                                     ),
-                                    SizedBox(
-                                      height: 10.0,
-                                    ),
-                                    Text(
-                                      levels[index],
-                                      style: GoogleFonts.lato(
-                                        fontSize: 30,
-                                        color: Color(0xFF40D876),
-                                        fontWeight: FontWeight.bold,
-                                      ),
-                                    ),
-                                    SizedBox(
-                                      height: 20.0,
-                                    ),
-                                    Text(
-                                      "I have never trained",
-                                      style: GoogleFonts.lato(
-                                        fontSize: 12,
-                                        fontWeight: FontWeight.w400,
-                                        color: Colors.white,
-                                      ),
-                                    ),
-                                  ],
+                                  ),
                                 ),
-                              ),
-                            ),
-                          );
+                              ));
                         },
                       ),
                     ),
@@ -162,7 +177,7 @@ class _WelcomViewState extends State<WelcomView> {
                             Navigator.push(
                                 context,
                                 MaterialPageRoute(
-                                    builder: (context) => HomeView()));
+                                    builder: (context) => LoginScreen()));
                           },
                           child: Container(
                             width: 139,
@@ -173,7 +188,7 @@ class _WelcomViewState extends State<WelcomView> {
                             ),
                             child: Center(
                               child: Text(
-                                "Next",
+                                "Exit",
                                 style: GoogleFonts.lato(
                                   fontSize: 16,
                                   fontWeight: FontWeight.w400,
