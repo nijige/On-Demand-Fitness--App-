@@ -2,8 +2,10 @@ import 'package:flutter/material.dart';
 import 'package:training_diet_app/models/exercise.dart';
 
 import '../models/workout.dart';
+import 'hive_database.dart';
 
 class WorkoutData extends ChangeNotifier {
+  final db = HiveDatabase();
   /*
   WORKOUT DATA STRUCTURES
   - This overall list contains the different workouts
@@ -18,6 +20,15 @@ class WorkoutData extends ChangeNotifier {
       Exercise(name: "Squats", weight: "10", reps: "10", sets: "3")
     ]),
   ];
+
+  // if there
+  void initalizeWorkoutList() {
+    if (db.previousDataExists()) {
+      workoutList = db.readFromDatabase();
+    } else {
+      db.saveToDatabase(workoutList);
+    }
+  }
 
   //get the list of workouts
   List<Workout> getWorkoutList() {
@@ -35,6 +46,8 @@ class WorkoutData extends ChangeNotifier {
     //add a new workout with a blank list of exercises
     workoutList.add(Workout(name: name, exercises: []));
     notifyListeners();
+    //save to database
+    db.saveToDatabase(workoutList);
   }
 
   // add an exercise to a workout

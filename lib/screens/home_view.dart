@@ -136,6 +136,12 @@ class OtherScreen extends StatefulWidget {
 
 class _OtherScreenState extends State<OtherScreen> {
   // text controller
+  @override
+  void initState() {
+    super.initState();
+    Provider.of<WorkoutData>(context, listen: false).initalizeWorkoutList();
+  }
+
   final newWorkoutNameController = TextEditingController();
   void createNewWorkout() {
     showDialog(
