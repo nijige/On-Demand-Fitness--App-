@@ -17,10 +17,10 @@ class _WelcomViewState extends State<WelcomView> {
   void navigateToAnotherPage() {
     Navigator.push(
       context,
-      MaterialPageRoute(
+     MaterialPageRoute(
           builder: (context) =>
-              HomeView()), // Substitua "AnotherPage" pela página para a qual deseja navegar
-    );
+             HomeView()), // Substitua "AnotherPage" pela página para a qual deseja navegar
+   );
   }
 
   @override
